@@ -13,8 +13,8 @@ export default defineConfig({
       Helpers: "/src/Helpers",
       Layouts: "/src/Layouts",
       Pages: "/src/Pages",
-      Redux: "/src/Pages",
-      Routes: "/src/Pages",
+      Redux: "/src/Redux",
+      Routes: "/src/Routes",
     }
   }
 })
