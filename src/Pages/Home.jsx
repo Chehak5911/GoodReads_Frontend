@@ -20,7 +20,9 @@ export default function Home(){
                             Register
                         </button>
                     </Link>
-                    <button className='btn btn-warning mx-3 rounded-md px-5 py-2 text-xl'>Login</button>
+                    <Link to="/signin">
+                        <button className='btn btn-warning mx-3 rounded-md px-5 py-2 text-xl'>Login</button>
+                    </Link>
                 </div>
             </div>
         </div>
