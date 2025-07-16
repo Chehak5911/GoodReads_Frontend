@@ -2,7 +2,7 @@ import Layout from "Layouts/Layout";
 import BookImage from 'Assets/Images/book.jpg';
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getAllBookShelves } from "Redux/Slices/ShelfSlice";
+import { createShelf, getAllBookShelves } from "Redux/Slices/ShelfSlice";
 import { useNavigate } from "react-router-dom";
 
 export default function Shelf(){
@@ -13,6 +13,7 @@ export default function Shelf(){
 
     const [activeShelf, setActiveShelf] = useState(null);
     const [books, setBooks] = useState([]);
+    const [shelfInput, setShelfInput] = useState("");
 
     async function loadShelves(){
         if(shelfState.bookList.length === 0){
@@ -48,13 +49,31 @@ export default function Shelf(){
                 <div className="flex flex-col justify-start items-start">
                     {shelfState.shelfList.length>0 && shelfState.shelfList.map((shelf)=>{
                         return (
-                            <div onClick={()=>changeActiveShelf(shelf._id)} key={shelf._id} className="mt-3 mb-3">
-                                <button className={`btn-${activeShelf === shelf._id ? 'primary': 'warning'} px-2 py-1 text-2xl`}> 
+                            <div onClick={()=>changeActiveShelf(shelf._id)} key={shelf._id} className="mt-3 mb-3 w-full">
+                                <button className={`btn-${activeShelf === shelf._id ? 'primary': 'warning'} px-2 py-1 text-2xl rounded-md px-2 w-full`}> 
                                     {shelf.name} 
                                 </button>
                             </div>
                         )
                     })}
+                    <div>
+                        <input 
+                        className="p-4 bg-white rounded-sm mb-4 text-black" 
+                        placeholder="Shelf Name"
+                        value={shelfInput}
+                        onChange={(e)=>{setShelfInput(e.target.value)}}
+                        />
+                        <button 
+                        className="block btn-accent px-4 py-2 rounded-md"
+                        onClick={async ()=>{
+                            await dispatch(createShelf({shelfName: shelfInput}))
+                            await dispatch(getAllBookShelves());
+                            setBooks('');
+                        }}
+                        >
+                            Create New Shelf
+                        </button>
+                    </div>
                 </div>
             </div>
             <div className="overflow-x-auto">
