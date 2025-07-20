@@ -24,7 +24,7 @@ export default function Navbar(){
                             <ul className="p-2 bg-base-100">
                                 {authState.isLoggedIn && <li> <Link to="/signin" onClick={onLogout}>Logout</Link> </li>}
                                 {!authState.isLoggedIn && <li> <Link to="/signin">Signin</Link> </li>}
-                                {!authState.isLoggedIn && <li> <Link to="/signin">Signup</Link> </li>}
+                                {!authState.isLoggedIn && <li> <Link to="/signup">Signup</Link> </li>}
                             </ul>
                         </details>
                     </li>

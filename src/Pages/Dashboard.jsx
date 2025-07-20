@@ -1,6 +1,4 @@
 import BookCard from "Components/BookCard/BookCard";
-import Footer from "Components/Footer/Footer";
-import Navbar from "Components/Navbar/Navbar";
 import Layout from "Layouts/Layout";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -24,7 +22,7 @@ export default function Dashboard(){
     return (
         <Layout>
             {bookState.bookList.length>0 && bookState.bookList.map(book => {
-                return <BookCard id={book._id} title={book.title} description={book.description} author={book.author?.name} />
+                return <BookCard id={book._id} data={book} />
             })}
         </Layout>
     )
