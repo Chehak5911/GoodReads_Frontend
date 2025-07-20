@@ -20,23 +20,13 @@ A responsive web application inspired by GoodReads, where users can sign up, log
 
 > 📁 Store all screenshots inside a `screenshots/` folder in the root of your project
 
-| Sign In | Sign Up | Home |
+| Home | Sign Up | Sign In |
 |--------|---------|------|
-| ![Sign In](./screenshots/signin.png) | ![Sign Up](./screenshots/signup.png) | ![Home](./screenshots/home.png) |
+| ![Home](./screenshots/Home.png)| ![Sign In](./screenshots/signin.png) | ![Sign Up](./screenshots/signup.png) |
 
-| Shelves | Add to Shelf | Dashboard |
+| Shelves | Footer | Dashboard |
 |--------|--------------|-----------|
-| ![Shelves](./screenshots/shelves.png) | ![Add Book](./screenshots/add-book.png) | ![Dashboard](./screenshots/dashboard.png) |
-
----
-
-## 📽️ Demo Video
-
-Watch the full app flow in action:
-
-[![Watch the video](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
-
-> 🎥 Upload your video to YouTube or Loom and replace the link and thumbnail accordingly.
+| ![Shelves](./screenshots/Shelves.png) | ![Footer](./screenshots/Footer.png) | ![Dashboard](./screenshots/Dashboard.png) |
 
 ---
 
@@ -46,7 +36,7 @@ Watch the full app flow in action:
 - React.js
 - Redux Toolkit
 - React Router DOM
-- Tailwind CSS (or your styling framework)
+- Tailwind CSS 
 
 **Libraries & Tools:**
 - Axios
@@ -59,7 +49,7 @@ Watch the full app flow in action:
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/your-username/goodreads-clone.git
+git clone https://github.com/Chehak5911/goodreads-clone.git
 cd goodreads-clone
 
 2. **Install dependencies**
@@ -71,7 +61,7 @@ npm install
 Create a .env file in the root directory and add the following:
 
 ```bash
-REACT_APP_BACKEND_URL=http://localhost:3005/api/v1
+VITE_BACKEND_URL=http://localhost:3005/api/v1/
 
 3. **Start the deployment server**
 
