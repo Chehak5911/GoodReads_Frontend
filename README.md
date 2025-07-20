@@ -1,12 +1,85 @@
-# React + Vite
+# 📚 GoodReads Clone – Book Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive web application inspired by GoodReads, where users can sign up, log in, explore books, organize them into shelves, and manage their reading journey via a personalized dashboard.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🔐 **Authentication**: Sign up and Sign in with secure login.
+- 🏠 **Home Page**: Browse a collection of books after logging in.
+- 📚 **Shelves**:
+  - View categorized shelves: *Currently Reading*, *Want to Read*, and *Read*.
+  - Add more book shelves.
+- 🧭 **Dashboard**: Navigate across pages and manage your reading activity.
+- 🔓 **Logout**: End session securely from the dashboard.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🖼️ Screenshots
+
+> 📁 Store all screenshots inside a `screenshots/` folder in the root of your project
+
+| Sign In | Sign Up | Home |
+|--------|---------|------|
+| ![Sign In](./screenshots/signin.png) | ![Sign Up](./screenshots/signup.png) | ![Home](./screenshots/home.png) |
+
+| Shelves | Add to Shelf | Dashboard |
+|--------|--------------|-----------|
+| ![Shelves](./screenshots/shelves.png) | ![Add Book](./screenshots/add-book.png) | ![Dashboard](./screenshots/dashboard.png) |
+
+---
+
+## 📽️ Demo Video
+
+Watch the full app flow in action:
+
+[![Watch the video](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+
+> 🎥 Upload your video to YouTube or Loom and replace the link and thumbnail accordingly.
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend:**
+- React.js
+- Redux Toolkit
+- React Router DOM
+- Tailwind CSS (or your styling framework)
+
+**Libraries & Tools:**
+- Axios
+- React Toastify (for notifications)
+
+---
+
+## 📦 Installation & Setup
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/your-username/goodreads-clone.git
+cd goodreads-clone
+
+2. **Install dependencies**
+
+```bash
+npm install
+
+3. **Set up environment variables**
+Create a .env file in the root directory and add the following:
+
+```bash
+REACT_APP_BACKEND_URL=http://localhost:3005/api/v1
+
+3. **Start the deployment server**
+
+```bash
+npm run dev
+
+## ✍️ Author
+**Chehak Batra**  
+[GitHub](https://github.com/Chehak5911) · [LinkedIn]([https://linkedin.com/in/your-profile](https://www.linkedin.com/in/chehak-batra5911/)
+
+
